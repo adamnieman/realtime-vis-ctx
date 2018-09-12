@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https:/fonts.googleapis.com/css?family=Vollkorn">
+  
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/desktop.css">
+		<script src = "js/debug.js"></script>
+		<script src = "js/utility.js"></script>
+		<script src = "js/core.js"></script>
+	</head>
+	<body>
+	<div id = "mother">
+	<div id = "form-container">
+		<form id = "form">
+			<h2>Welcome to your real-time emissions visualiser</h2>
+			<p>Name your project:</p>
+	  		<input type="text" name="heading" maxlength = "80"><br>
+	  		<p>Provide your audience with more detail if needed:</p>
+	  		<textarea type="text" name="subheading" maxlength = "300"></textarea><br>
+	  		<p>Annual emissions:</p>
+	  		<input type="number" name="annual-emissions">
+	  		 <select name="annual-emissions-unit">
+			  <option value="1">kg</option>
+			  <option value="1000">t</option>
+			  <option value="1000000">kt</option>
+			  <option value="1000000000">Mt</option>
+			  <option value="1000000000000">Gt</option>
+			</select>
+			<!--<input type = "submit" onsubmit="event.preventDefault();">-->
+			<div id = "submit">Visualise these emissions!</div>
+
+		</form>	
+	</div>
+	<div id = "vis-container">
+		<iframe id = "iframe" src = "">
+		</iframe>
+	</div>
+	</div>
+	</body>
+</html>
